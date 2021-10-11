@@ -13,6 +13,7 @@ body{
     width: 100%;
     display: grid;
     grid-template-columns: 2.5fr;
+    background: #9edbed;
 }
 
 section{
@@ -88,6 +89,7 @@ input ~ i{
     transform: translateY(-50%);
     opacity: 50%;
     transition: color 0.4s;
+    background: none;
 }
 
 input:focus ~ i{
