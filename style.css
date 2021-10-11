@@ -54,6 +54,8 @@ section{
     opacity: 60%;
 }
 
+/* https://www.w3schools.com/howto/howto_css_login_form.asp */
+
 .login-form{
     width: 100%;
     display: flex;
@@ -96,4 +98,36 @@ input:focus ~ i{
     color: #009dff;
     opacity: 100%;
 }
+
+
+/* https://www.w3schools.com/css/css3_gradients.asp */
+
+button.submit{
+    color: white;
+    padding: 14px 64px;
+    margin: 25px auto;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    background-image: linear-gradient(to
+    right, #1a4966, #009dff);
+    cursor: pointer;
+}
+
+button.create{
+    color: white;
+    padding: 14px 64px;
+    margin: auto;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    background-image: linear-gradient(to
+    right, #f47634, #fa5700 );
+    cursor: pointer;
+}
+
+
+
+
+
 
