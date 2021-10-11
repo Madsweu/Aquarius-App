@@ -8,12 +8,14 @@
     color: #464948;
 }
 
+/* https://www.w3schools.com/css/css_grid.asp */
+
 body{
     min-height: 100vh;
     width: 100%;
     display: grid;
     grid-template-columns: 2.5fr;
-    background: #9edbed;
+    background: rgb(30, 142, 156);
 }
 
 section{
@@ -124,6 +126,11 @@ button.create{
     background-image: linear-gradient(to
     right, #f47634, #fa5700 );
     cursor: pointer;
+}
+
+a{
+    color: white;
+    text-decoration: none;
 }
 
 
