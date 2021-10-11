@@ -64,3 +64,34 @@ section{
     position: relative;
     margin-bottom: 24px;
 }
+
+input, button{
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.1em;
+}
+
+input {
+    width: 100%;
+    background: #e6e6e6;
+    opacity: 80%;
+    letter-spacing: 0.5px;
+    padding: 14px 64px;
+    color: black;  
+}
+
+input ~ i{
+    position: absolute;
+    left: 32px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 50%;
+    transition: color 0.4s;
+}
+
+input:focus ~ i{
+    color: #009dff;
+    opacity: 100%;
+}
+
