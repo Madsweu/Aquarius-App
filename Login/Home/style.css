@@ -21,6 +21,8 @@ img{
 }
 
 
+/* Sidebar navigation with nav-list and icons */ 
+
 .sidebar{
     position: fixed;
     top: 0;
@@ -29,18 +31,36 @@ img{
     width: 78px;
     background: #e6e6e6;
     padding: 6px 14px;
+    transition: all 0.5s ease;
 }
+
+/* Making the onclick funtion active in css  */ 
 
 .sidebar.active{
     width: 240px;
 }
+
+/* Styling the logo inside the sidebar */ 
 
 .sidebar .logo_content .logo{
     display: flex;
     height: 50px;
     width: 100%;
     align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    margin-left: 15px;
+
 }
+
+/* Making logo disapear onclick */ 
+
+.sidebar.active .logo_content .logo{
+    opacity: 1;
+    pointer-events: none;
+}
+
+/* Styling the logo inside the sidebar */ 
 
 .logo_content .logo i{
     font-size: 28px;
@@ -54,10 +74,12 @@ img{
     color: white;
 }
 
+/* Styling the bars-button */ 
+
 .sidebar #btn{
     position: absolute;
     color: #009dff;
-    left: 90%;
+    left: 50%;
     top: 6px;
     font-size: 20px;
     height: 50px;
@@ -66,6 +88,15 @@ img{
     line-height: 50px;
     transform: translateX(-50%);
 }
+
+/* Making bars icon follow with sidebar closing*/ 
+
+.sidebar.active #btn{
+    left: 90%;
+
+}
+
+/* Styling ul and li */ 
 
 .sidebar ul{
     margin-top: 20px;
@@ -78,6 +109,7 @@ img{
     margin: 0 5px;
     list-style: none;
     line-height: 50px;
+    margin-left: 0;
 }
 
 .sidebar ul li a{
@@ -93,8 +125,23 @@ img{
     border-radius: 50px;
     line-height: 50px;
     text-align: center;
+   
 }
 
+/* Making the text disapear when closing the menu */ 
+
+.sidebar .links{
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.sidebar.active .links{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Styling the input textarea */ 
 
 .sidebar ul li input{
     position: absolute;
@@ -111,8 +158,12 @@ img{
     color: white;
 }
 
+/* Styling the search icon */ 
+
 .sidebar ul li .fa-search{
     z-index: 99;
     font-size: 22px;
     
 }
+
+

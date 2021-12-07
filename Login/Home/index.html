@@ -17,7 +17,7 @@
             </div>
             <i class="fas fa-bars" id="btn"></i>
         </div>
-        <ul class="nav-list">
+        <ul class="navlist">
             <li>
                 <a href="#">
                     <i class="fas fa-search"></i>
@@ -45,7 +45,7 @@
             <li>
                 <a href="#">
                     <i class="fas fa-cog"></i>
-                    <span class="links">Setting</span>
+                    <span class="links">Settings</span>
                 </a>
             </li>
         </ul>
@@ -55,6 +55,7 @@
         let btn = document.querySelector("#btn");
         let sidebar = document.querySelector(".sidebar");
         let searchBtn = document.querySelector(".fa-search");
+       
 
         btn.onclick = function() {
         sidebar.classList.toggle("active")
@@ -63,6 +64,8 @@
         searchBtn.onclick = function() {
         sidebar.classList.toggle("active")
     }
+
+    
 
     </script>
 
