@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="style.css">
     <title>Aquarius</title>
 </head>
+
+<!-- Sidebar navigation with icons, links and searchbar --> 
+
 <body>
     <div class="sidebar">
         <div class="logo_content">
@@ -47,16 +50,22 @@
                     <i class="fas fa-cog"></i>
                     <span class="links">Settings</span>
                 </a>
-            </li>
+            </li>   
         </ul>
+        <div class="returnbtn">
+            <a href="#">
+                <i class="fas fa-sign-out-alt"></i>
+            </a>
+        </div>
     </div>
+
+<!-- Adding JavaSript and making specific classes active onclick --> 
 
     <script>
         let btn = document.querySelector("#btn");
         let sidebar = document.querySelector(".sidebar");
         let searchBtn = document.querySelector(".fa-search");
        
-
         btn.onclick = function() {
         sidebar.classList.toggle("active")
     }
@@ -64,9 +73,6 @@
         searchBtn.onclick = function() {
         sidebar.classList.toggle("active")
     }
-
-    
-
     </script>
 
     

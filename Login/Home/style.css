@@ -21,6 +21,8 @@ img{
 }
 
 
+/* https://www.w3schools.com/howto/howto_css_sidebar_responsive.asp */ 
+
 /* Sidebar navigation with nav-list and icons */ 
 
 .sidebar{
@@ -117,6 +119,7 @@ img{
     display: flex;
     align-items: center;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .sidebar ul li i{
@@ -166,4 +169,31 @@ img{
     
 }
 
+/* Styling return button */
+
+.sidebar .returnbtn{
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    margin: 0 5px;
+    list-style: none;
+    bottom: 0;
+    margin-left: 20%;
+    transition: all 0.5s ease;
+}
+
+/* Making icon rotate */ 
+
+.fa-sign-out-alt{
+    transform: rotateZ(180deg); 
+    text-decoration: none;
+    color: #009dff;
+}
+
+/* Moving the icon when opening menu */ 
+
+.sidebar.active .returnbtn{
+    margin-left: 40%;
+
+}
 
