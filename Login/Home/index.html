@@ -10,18 +10,24 @@
 </head>
 <body>
     <div class="sidebar">
-        <div class="logo-content">
+        <div class="logo_content">
             <div class="logo">
-                <img src="voreslogo-removebg.png" alt="logo">
-                <div class="logo-name">Aquarius</div>
+                <i class="fas fa-tint"></i>
+                <div class="logo_name">Aquarius</div>
             </div>
             <i class="fas fa-bars" id="btn"></i>
         </div>
         <ul class="nav-list">
             <li>
                 <a href="#">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Søg..">
+                </a>
+            </li>
+            <li>
+                <a href="#">
                     <i class="fas fa-th"></i>
-                    <span class="links">Dashbord</span>
+                    <span class="links">Dashboard</span>
                 </a>
             </li>
             <li>
@@ -44,6 +50,21 @@
             </li>
         </ul>
     </div>
+
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+        let searchBtn = document.querySelector(".fa-search");
+
+        btn.onclick = function() {
+        sidebar.classList.toggle("active")
+    }
+
+        searchBtn.onclick = function() {
+        sidebar.classList.toggle("active")
+    }
+
+    </script>
 
     
 </body>
