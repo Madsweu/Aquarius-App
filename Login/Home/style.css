@@ -301,12 +301,13 @@ button:disabled{
 }
 
 @media screen and (min-width:400px){
-    
+
     .container{
-        align-items: center;
-        justify-content: center;
-        max-width: 600px;     
+        max-width: 100%;     
     }
+
+
+    
 
 }
 
