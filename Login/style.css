@@ -1,21 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    color: #464948;
+    font-family: 'Readex Pro';
 }
 
 /* https://www.w3schools.com/css/css_grid.asp */
+
+img{
+    width: 60%;
+    height: 60%;
+}
+
 
 body{
     min-height: 100vh;
     width: 100%;
     display: grid;
     grid-template-columns: 2.5fr;
-    background: rgb(30, 142, 156);
+    background-color: #a8cae3;
 }
 
 section{
@@ -43,7 +48,7 @@ section{
 .separator{
     width: 150px;
     height: 4px;
-    background-color: #009dff;
+    background-color: #177CC4;
     margin: 24px;
 }
 
@@ -97,7 +102,7 @@ input ~ i{
 }
 
 input:focus ~ i{
-    color: #009dff;
+    color: #f2b705;
     opacity: 100%;
 }
 
@@ -112,7 +117,7 @@ button.submit{
     letter-spacing: 2px;
     font-weight: bold;
     background-image: linear-gradient(to
-    right, #1a4966, #009dff);
+    right, #1a4966, #177CC4);
     cursor: pointer;
 }
 
@@ -124,7 +129,7 @@ button.create{
     letter-spacing: 2px;
     font-weight: bold;
     background-image: linear-gradient(to
-    right, #f47634, #fa5700 );
+    right, #f47634, #f2b705 );
     cursor: pointer;
 }
 

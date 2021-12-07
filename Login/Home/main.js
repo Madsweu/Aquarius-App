@@ -1,3 +1,5 @@
+//www.youtube.com/watch?v=9FC87h9ktxY&ab_channel=FrontendGrowth
+
 // Select the two buttons
 const addButton = document.querySelector(".add"),
       removeButton = document.querySelector(".remove");
